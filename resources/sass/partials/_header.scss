@@ -1,0 +1,81 @@
+.notifications {
+    height: 40px;
+    background-color: $secondary_color;
+    // width: 100%;
+    // position: relative;
+    // overflow: hidden;
+    // max-width: 100%;
+}
+header {
+    padding: 40px 80px;
+    img {
+        width: 142px;
+    }
+    .logo {
+        display: inline-block;
+    }
+    .menu {
+        float: right;
+        .navbar {
+            // reset regole bootstrap sul padding
+            padding: 0;
+            ul {
+                margin-top: 3px;
+                display: flex;
+                li {
+                    &:hover a {
+                        color: $primary_color;
+                    }
+                    &:first-child a {
+                        color: $secondary_color;
+                        &:hover {
+                            color: $secondary_color;
+                        }
+                    }
+                    padding-right: 30px;
+                    font-size: 18px;
+                    &:last-child a {
+                        color: $secondary_color;
+                        padding: 9px 18px;
+                        background-color: #fff;
+                        border: 2px solid $secondary_color;
+                        border-radius: 6px;
+                        &:hover {
+                            color: #fff;
+                            text-decoration: none;
+                            background-color: $secondary_color;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+    .hidden {
+        display: none;
+    }
+}
+@media all and (max-width: 992px) {
+    header .hidden {
+        display: block;
+        color: $primary_color;
+        font-size: 35px;
+        position: absolute;
+        top: 77px;
+        right: 100px;
+    }
+    header .menu {
+        display: none;
+    }
+}
+@media all and (max-width: 500px) {
+    header {
+        padding: 35px 18px;
+        .hidden {
+            right: 30px;
+            top: 30px;
+        }
+    }
+    .notifications  {
+        display: none;
+    }
+}
