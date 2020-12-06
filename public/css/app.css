@@ -10979,7 +10979,7 @@ header .menu .navbar ul li:first-child a:hover {
 
 header .menu .navbar ul li:last-child a {
   color: #0cd977;
-  padding: 9px 18px;
+  padding: 10px 20px;
   background-color: #fff;
   border: 2px solid #0cd977;
   border-radius: 6px;
@@ -11066,7 +11066,45 @@ header .hidden {
   vertical-align: middle;
 }
 
-.image-claim img {
-  width: 450px;
+@media all and (max-width: 500px) {
+  .claim {
+    padding: 30px 18px;
+  }
+}
+
+#numbers {
+  background-color: #001632;
+  padding: 60px 0;
+  color: #fff;
+}
+
+#numbers h2 {
+  font-size: 48px;
+  color: #006cfa;
+  font-weight: bold;
+}
+
+#numbers .wrapper-three-items {
+  display: flex;
+}
+
+#numbers .wrapper-three-items h3 {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+#numbers .wrapper-three-items .three-items img {
+  width: 80px;
+  padding: 10px 0;
+}
+
+@media all and (max-width: 992px) {
+  #numbers {
+    text-align: center;
+  }
+
+  .wrapper-three-items {
+    flex-direction: column;
+  }
 }
 

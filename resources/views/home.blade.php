@@ -23,6 +23,44 @@
                 </div>
             </div>
         </section>
+
+        <section id="numbers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>I nostri numeri</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                        <div class="wrapper-three-items">
+                            <div class="three-items">
+                                <img src="{{asset('img/person.png')}}" alt="persona">
+                                <h3>700 +</h3>
+                                <p>GLI STUDENTI CHE FINO AD OGGI HANNO SEGUITO IL CORSO ONLINE DI BOOLEAN.</p>
+                            </div>
+                            <div class="three-items">
+                                <img src="{{asset('img/pacman.png')}}" alt="pacman">
+                                <h3>98 %</h3>
+                                <p>LA PERCENTUALE DEI NOSTRI STUDENTI CHE ORA LAVORA IN CAMPO TECH.</p>
+                            </div>
+                            <div class="three-items">
+                                <img src="{{asset('img/rettangolo.png')}}" alt="rettangolo">
+                                <h3>23.000 €</h3>
+                                <p>LO STIPENDIO MEDIO LORDO DI PARTENZA DEGLI STUDENTI ASSUNTI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+
+
+
     </main>
 @endsection
 

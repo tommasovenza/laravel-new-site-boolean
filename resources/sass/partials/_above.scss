@@ -30,7 +30,11 @@
 }
 .image-claim {
     vertical-align: middle;
-    img {
-        width: 450px;
+}
+
+// media queries
+@media all and (max-width: 500px) {
+    .claim {
+        padding: 30px 18px;
     }
 }

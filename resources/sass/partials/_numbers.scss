@@ -1,0 +1,31 @@
+#numbers {
+    background-color: $primary_color;
+    padding: 60px 0;
+    color: #fff;
+    h2 {
+        font-size: 48px;
+        color: $tertiary_color;
+        font-weight: bold;
+    }
+    .wrapper-three-items {
+        display: flex;
+        h3 {
+            font-weight: bold;
+            font-size: 48px;
+        }
+        .three-items img {
+            width: 80px;
+            padding: 10px 0;
+        }
+    }   
+}
+
+// media queries
+@media all and (max-width: 992px) {
+    #numbers {
+        text-align: center;
+    }
+    .wrapper-three-items {
+        flex-direction: column;
+    }
+}
