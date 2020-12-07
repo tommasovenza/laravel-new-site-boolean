@@ -19,3 +19,17 @@ a {
         text-decoration: underline;
     }
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    background-color: #fff;
+    padding: 25px 80px 15px 80px;
+}
+
+@media all and (max-width: 500px) {
+    .sticky {
+        padding: 40px 80px;
+    }
+}

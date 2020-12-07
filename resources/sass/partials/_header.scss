@@ -52,6 +52,7 @@ header {
     }
     .hidden {
         display: none;
+        position: relative;
     }
 }
 @media all and (max-width: 992px) {
@@ -59,20 +60,28 @@ header {
         display: block;
         color: $primary_color;
         font-size: 35px;
-        position: absolute;
-        top: 77px;
-        right: 100px;
+        i {
+            position: absolute;
+            top: -35px;
+        }
     }
     header .menu {
         display: none;
     }
 }
+@media all and (min-width: 501px) and (max-width: 992px) {
+    header {
+        i {
+            right: -26px;
+        }
+    }
+}
+
 @media all and (max-width: 500px) {
     header {
         padding: 35px 18px;
-        .hidden {
-            right: 30px;
-            top: 30px;
+        i {
+            right: 6px;
         }
     }
     .notifications  {

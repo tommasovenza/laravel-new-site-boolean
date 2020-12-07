@@ -1,7 +1,7 @@
 <div class="notifications">
         
 </div>
-<header>
+<header id="header">
         <div class="logo">
             <img src="{{ asset('img/logo.png') }}" alt="">
         </div>

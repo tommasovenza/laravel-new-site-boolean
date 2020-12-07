@@ -10930,6 +10930,21 @@ a:hover {
   text-decoration: underline;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+  background-color: #fff;
+  padding: 25px 80px 15px 80px;
+}
+
+@media all and (max-width: 500px) {
+  .sticky {
+    padding: 40px 80px;
+  }
+}
+
 .notifications {
   height: 40px;
   background-color: #0cd977;
@@ -10993,6 +11008,7 @@ header .menu .navbar ul li:last-child a:hover {
 
 header .hidden {
   display: none;
+  position: relative;
 }
 
 @media all and (max-width: 992px) {
@@ -11000,13 +11016,21 @@ header .hidden {
     display: block;
     color: #001632;
     font-size: 35px;
+  }
+
+  header .hidden i {
     position: absolute;
-    top: 77px;
-    right: 100px;
+    top: -35px;
   }
 
   header .menu {
     display: none;
+  }
+}
+
+@media all and (min-width: 501px) and (max-width: 992px) {
+  header i {
+    right: -26px;
   }
 }
 
@@ -11015,9 +11039,8 @@ header .hidden {
     padding: 35px 18px;
   }
 
-  header .hidden {
-    right: 30px;
-    top: 30px;
+  header i {
+    right: 6px;
   }
 
   .notifications {
@@ -11091,11 +11114,12 @@ header .hidden {
 #numbers .wrapper-three-items h3 {
   font-weight: bold;
   font-size: 48px;
+  padding: 20px 0;
 }
 
 #numbers .wrapper-three-items .three-items img {
   width: 80px;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 @media all and (max-width: 992px) {
