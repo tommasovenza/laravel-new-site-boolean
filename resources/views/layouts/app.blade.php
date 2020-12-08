@@ -8,9 +8,9 @@
     {{-- CUSTOM CSS --}}
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     {{-- GOOGLE FONTS --}}
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laravel Boolean New Site</title>
+    <title>@yield('title')</title>
 </head>
 <body>
 
@@ -20,7 +20,7 @@
 
 @include('partials.footer')
 
-
 <script src="{{ asset('js/app.js')}}"></script>
 </body>
 </html>
+

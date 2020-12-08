@@ -10939,6 +10939,14 @@ a:hover {
   padding: 25px 80px 15px 80px;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 @media all and (max-width: 500px) {
   .sticky {
     padding: 40px 80px;
@@ -11129,6 +11137,61 @@ header .hidden {
 
   .wrapper-three-items {
     flex-direction: column;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.green {
+  padding: 80px 0;
+  background-image: url(/images/tastiera.png?a0f26d3ec3518d898f4086b9ec77230e);
+  background-color: #70f3be;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+  height: 400px;
+}
+
+.green h2 {
+  padding-bottom: 30px;
+  color: #006cfa;
+}
+
+.green p {
+  color: #001632;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#white_blue {
+  color: #001632;
+}
+
+#white_blue .blue {
+  background-color: #006cfa;
+}
+
+#white_blue .padding {
+  padding: 100px 0 200px 15px;
+}
+
+@media all and (max-width: 992px) {
+  .green {
+    padding-bottom: 550px;
+    background-position: bottom;
+    height: 550px;
+  }
+
+  .green h2 {
+    font-size: 40px;
+    padding: 8px 0;
+  }
+
+  .green p {
+    font-size: 18px;
   }
 }
 

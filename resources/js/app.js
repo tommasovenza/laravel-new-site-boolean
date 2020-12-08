@@ -15,3 +15,11 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+$(document).ready(function() {
+  
+  $('#white_blue h3').click(function() {
+    $(this).next('p').fadeToggle('hide show', 'linear');
+  }); 
+
+}); 

@@ -1,0 +1,47 @@
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.green {
+    padding: 80px 0;
+    background-image: url('../../../public/img/tastiera.png');
+    background-color: $fourth_color;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+    height: 400px;
+    h2 {
+        padding-bottom: 30px;
+        color: $tertiary_color;       
+    }
+    p {
+        color: $primary_color;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+#white_blue {
+    color: $primary_color;
+    .blue {
+        background-color: $tertiary_color;
+    }
+    .padding {
+        padding: 100px 0 200px 15px;
+    }
+}
+// media queries
+@media all and (max-width: 992px) {
+    .green {
+        padding-bottom: 550px;    
+        background-position: bottom;
+        height: 550px;
+        h2 {
+            font-size: 40px;
+            padding: 8px 0;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}

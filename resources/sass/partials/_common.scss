@@ -28,6 +28,14 @@ a {
     padding: 25px 80px 15px 80px;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 @media all and (max-width: 500px) {
     .sticky {
         padding: 40px 80px;

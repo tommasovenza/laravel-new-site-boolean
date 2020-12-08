@@ -37297,6 +37297,12 @@ function myFunction() {
   }
 }
 
+$(document).ready(function () {
+  $('#white_blue h3').click(function () {
+    $(this).next('p').fadeToggle('hide show', 'linear');
+  });
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

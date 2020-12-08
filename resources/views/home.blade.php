@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+Laravel Boolean New Site   
+@endsection
+
 @section('content')
     <main>
         <section id="above-the-fold">
