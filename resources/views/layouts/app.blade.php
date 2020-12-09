@@ -8,7 +8,7 @@
     {{-- CUSTOM CSS --}}
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     {{-- GOOGLE FONTS --}}
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
 </head>

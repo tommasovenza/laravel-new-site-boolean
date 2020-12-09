@@ -2,7 +2,11 @@ h2 {
     font-size: 48px;
     font-weight: 700;
 }
-
+h3 {
+    font-size: 24px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
 .green {
     padding: 80px 0;
     background-image: url('../../../public/img/tastiera.png');
@@ -23,13 +27,62 @@ h2 {
 }
 #white_blue {
     color: $primary_color;
+    position: relative;
+    .background {
+        position: absolute;
+        background: $tertiary_color;
+        right: 0;
+        width: 50%;
+        height: 100%
+    }
     .blue {
         background-color: $tertiary_color;
+        .square-1 {
+            background-color: #fff;
+        }
+        .square-2 {
+            background-color: $tertiary_color;
+        }
+        .square-3 {
+            background-color: $secondary_color;
+        }
+    }
+    .white {
+        .square-1 {
+            background-color: $primary_color;
+        }
+        .square-2 {
+            background-color: #fff;
+        }
+        .square-3 {
+            background-color: $secondary_color;
+        }
     }
     .padding {
-        padding: 100px 0 200px 15px;
+        padding: 50px 15px 100px 15px;
+    }
+    .regulus-container {
+        display: flex;
+        padding-bottom: 50px;
+        .rettangolo {
+            width: 75px;
+            background-color: $tertiary_color;
+            &.primary {
+                background-color: $primary_color;
+            }
+        }
+        .square-1, .square-2, .square-3 {
+            width: 15px;
+        }
+        .rettagolo, .square-1, .square-2, .square-3 {
+            height: 15px;
+        }
+    }
+    hr {
+        border: 1px solid $primary_color;
     }
 }
+
 // media queries
 @media all and (max-width: 992px) {
     .green {
@@ -43,5 +96,8 @@ h2 {
         p {
             font-size: 18px;
         }
+    }
+    .background {
+        display: none;
     }
 }

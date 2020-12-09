@@ -37299,7 +37299,8 @@ function myFunction() {
 
 $(document).ready(function () {
   $('#white_blue h3').click(function () {
-    $(this).next('p').fadeToggle('hide show', 'linear');
+    // $(this).next('p').fadeToggle('hide show', 'linear');
+    $(this).next('p').slideToggle();
   });
 });
 

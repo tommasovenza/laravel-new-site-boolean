@@ -18,23 +18,41 @@
     </div>
 
     <section id="white_blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 padding">
-                    <h2>Prima del corso</h2>
+        <div class="background"></div>
 
+        <div class="container pseudo">
+            <div class="row">
+                <div class="col-lg-6 padding white">
+                    <h2>Prima del corso</h2>
+                    {{-- i quadrati sotto al titolo --}}
+                    <div class="regulus-container">
+                        <div class="rettangolo"></div>
+                        <div class="square-1"></div>
+                        <div class="square-2"></div>
+                        <div class="square-3"></div>
+                    </div>
+                    {{-- riempio i campi dinamicamente --}}
                     @foreach ($data as $item)
                         <h3>{{$item['question']}}</h3>
                         <p class="hide">{{$item['answer']}}</p>
+                        <hr>
                     @endforeach
 
                 </div>
-                <div class="col-lg-6 blue padding">
+                <div class="col-lg-6 padding blue">
                     <h2>Dopo il corso</h2>
-
+                    {{-- i quadrati sotto al titolo --}}
+                    <div class="regulus-container">
+                        <div class="rettangolo primary"></div>
+                        <div class="square-1"></div>
+                        <div class="square-2"></div>
+                        <div class="square-3"></div>
+                    </div>
+                    {{-- riempio i campi dinamicamente --}}
                     @foreach ($an_data as $item)
                         <h3>{{$item['question']}}</h3>
                         <p class="hide">{{$item['answer']}}</p>
+                        <hr>
                     @endforeach
                 </div>
             </div>

@@ -11145,6 +11145,12 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 24px;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
 .green {
   padding: 80px 0;
   background-image: url(/images/tastiera.png?a0f26d3ec3518d898f4086b9ec77230e);
@@ -11168,14 +11174,78 @@ h2 {
 
 #white_blue {
   color: #001632;
+  position: relative;
+}
+
+#white_blue .background {
+  position: absolute;
+  background: #006cfa;
+  right: 0;
+  width: 50%;
+  height: 100%;
 }
 
 #white_blue .blue {
   background-color: #006cfa;
 }
 
+#white_blue .blue .square-1 {
+  background-color: #fff;
+}
+
+#white_blue .blue .square-2 {
+  background-color: #006cfa;
+}
+
+#white_blue .blue .square-3 {
+  background-color: #0cd977;
+}
+
+#white_blue .white .square-1 {
+  background-color: #001632;
+}
+
+#white_blue .white .square-2 {
+  background-color: #fff;
+}
+
+#white_blue .white .square-3 {
+  background-color: #0cd977;
+}
+
 #white_blue .padding {
-  padding: 100px 0 200px 15px;
+  padding: 50px 15px 100px 15px;
+}
+
+#white_blue .regulus-container {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+#white_blue .regulus-container .rettangolo {
+  width: 75px;
+  background-color: #006cfa;
+}
+
+#white_blue .regulus-container .rettangolo.primary {
+  background-color: #001632;
+}
+
+#white_blue .regulus-container .square-1,
+#white_blue .regulus-container .square-2,
+#white_blue .regulus-container .square-3 {
+  width: 15px;
+}
+
+#white_blue .regulus-container .rettagolo,
+#white_blue .regulus-container .square-1,
+#white_blue .regulus-container .square-2,
+#white_blue .regulus-container .square-3 {
+  height: 15px;
+}
+
+#white_blue hr {
+  border: 1px solid #001632;
 }
 
 @media all and (max-width: 992px) {
@@ -11192,6 +11262,10 @@ h2 {
 
   .green p {
     font-size: 18px;
+  }
+
+  .background {
+    display: none;
   }
 }
 
